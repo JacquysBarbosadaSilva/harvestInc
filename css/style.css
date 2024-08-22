@@ -9,6 +9,10 @@ a{
 
 
 /* Nav Bar */
+header{
+    position: fixed;
+    width: 100vw;
+}
 .nav_bar{
     background: linear-gradient(to right, #FFC456, #C09544, #997532, #775B28, #000000);
     height: 60px;
@@ -46,6 +50,9 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/);
 }
 
 .bem_vindo h1{
@@ -53,32 +60,33 @@ a{
     display: inline-block;
     font-family: 'Kaushan Script';
     font-size: 100px;
+    
 }
 
 .bem_vindo .titulo-bem-vindo::before{
     content: '';
     position: absolute;
     top: 0;
-    left: -200px;
-    width: calc(100% + 400px);
+    left: -150px;
+    width: calc(100% + 350px);
     height: 2px;
     background-color: #000000; 
 }
 
 .line-below {
     position: relative;
-    display: inline-block; /* Ajusta o tamanho do contêiner ao conteúdo */
-    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+    display: inline-block;
+    padding-bottom: 10px; 
 }
 
 .line-below::after {
     content: '';
     position: absolute;
     bottom: 0; 
-    left: -20px; 
-    width: calc(100% + 40px); 
-    height: 5px; 
-    background-color: #FF6347; 
+    left: -150px; 
+    width: calc(100% + 350px); 
+    height: 2px; 
+    background-color: #000000; 
 }
 
 
