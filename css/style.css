@@ -2,3 +2,323 @@
     padding: 0;
     margin: 0;
 }
+
+a{
+    text-decoration: none;
+}
+
+
+/* Nav Bar */
+.nav_bar{
+    background: linear-gradient(to right, #FFC456, #C09544, #997532, #775B28, #000000);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+.imagem-logo{
+    width: 150px;
+
+    justify-content: start;
+}
+
+.user-icon{
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+
+}
+/* Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    min-width: 160px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+/* Bem Vindo */
+.bem_vindo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bem_vindo h1{
+    position: relative;
+    display: inline-block;
+    font-family: 'Kaushan Script';
+    font-size: 100px;
+}
+
+.bem_vindo .titulo-bem-vindo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: calc(100% + 400px);
+    height: 2px;
+    background-color: #000000; 
+}
+
+.line-below {
+    position: relative;
+    display: inline-block; /* Ajusta o tamanho do contêiner ao conteúdo */
+    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+}
+
+.line-below::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: -20px; 
+    width: calc(100% + 40px); 
+    height: 5px; 
+    background-color: #FF6347; 
+}
+
+
+/* Contatos */
+#Contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+#PrestadoresServico{
+    width: 135px;  
+}
+
+.atendenteDuvidas{
+    background-color: white;
+    width: 450px;
+    height: 190px;
+    border-radius: 30px;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0); 
+
+}
+.atendenteTecnico{
+    background-color: white;
+    width: 450px;
+    height: 190px;
+    border-radius: 30px;
+    display: flex;
+    margin: auto;
+    box-shadow: 0 4px 8px rgb(0, 0, 0); 
+    
+}
+
+.informacao{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    
+}
+.contatoMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Planos */
+
+#main-plano{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+}
+#h1-plano{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card-inicial{
+    background-color: #f2b749;
+    text-align: justify;
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+
+}
+
+.card-sobreposicao{
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 15px;
+    height: 400px;
+    margin: 20px;
+
+}
+
+.card-informacao{
+    display: flex;
+    width: 500px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-planos{
+    width: 25px;
+    display: flex;
+    margin: 10px;
+}
+
+.infor-inicio{
+    margin: 20px;
+    margin-top: 50px;
+}
+
+#text-sub-titulo{
+    margin: 20px;
+}
+/* Login */
+#body-login {
+    height: 100vh;
+    width: 100%;
+    background: no-repeat linear-gradient(to bottom, rgb(255, 196, 86), rgba(192, 149, 68, 1), rgba(153, 117, 50, 1), rgba(119, 91, 40, 1), rgba(0, 0, 0, 1));
+}
+
+#main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#div-login {
+    background-color: white;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-login {
+    height: 80px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.form-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-login {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.email-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#text-lembrar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#text-lembrar input {
+    margin-right: 10px;
+}
+
+#text-lembrar label {
+    font-size: 14px;
+}
+
+#botao-entrar {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#botao-login {
+    width: 100%;
+    background-color: rgb(255, 196, 86);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#botao-login:hover {
+    transform: scale(1.05);
+}
+
+#entrar-a {
+    text-decoration: none;
+    color: black;
+}
+
+#esqueceu-senha {
+    width: 100%;
+    text-align: right;
+}
+
+#esqueceu-senha a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+
+#esqueceu-senha a:hover {
+    text-decoration: underline;
+}
