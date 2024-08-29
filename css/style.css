@@ -194,8 +194,7 @@ header{
 .card-inicial{
     background-color: #f2b749;
     text-align: justify;
-    width: 50%;
-    height: 500px;
+    width: 70%;
     border-radius: 20px;
 
 }
@@ -203,17 +202,17 @@ header{
 .card-sobreposicao{
     background-color: rgb(255, 255, 255, 0.4);
     border-radius: 15px;
-    height: 400px;
     margin: 20px;
-
+    display: flex;
 }
 
 .card-informacao{
     display: flex;
-    width: 500px;
     margin-top: 30px;
     align-items: center;
     justify-content: center;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }
 
 .icon-planos{
@@ -224,11 +223,17 @@ header{
 
 .infor-inicio{
     margin: 20px;
-    margin-top: 50px;
+    padding-top: 20px;
 }
 
 #text-sub-titulo{
     margin: 20px;
+}
+
+#img-feira{
+    height: 50%;
+    width: 550px;
+    opacity: 0.5;
 }
 /* Login */
 #body-login {
