@@ -41,9 +41,12 @@ header{
 
 .menu-button{
     border: none;
-    background-color: transparent;
-    padding: 10px;
+    background-color: rgb(181, 181, 181);
+    padding: 5px;
     font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
 }
 /* Bem Vindo */
 .bem_vindo{
@@ -52,7 +55,7 @@ header{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(../img/);
+    color: white;
 }
 
 .bem_vindo h1{
@@ -70,7 +73,7 @@ header{
     left: -150px;
     width: calc(100% + 350px);
     height: 2px;
-    background-color: #000000; 
+    background-color: #ffffff; 
 }
 
 .line-below {
@@ -86,9 +89,41 @@ header{
     left: -150px; 
     width: calc(100% + 350px); 
     height: 2px; 
-    background-color: #000000; 
+    background-color: #ffffff; 
 }
 
+.transparet_background{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.background_bem_vindo{
+    background-image: url(../img/Imagem\ de\ fundo\ home\ page.jpg);
+}
+
+.button_centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_saiba_mais_home_page{
+    padding: 20px;
+    background: linear-gradient(#F2B441, #8C6826);
+    margin-top: -200px;
+    border: none;
+    width: 150px;
+    font-size: 16px;
+    color: white;
+    border-radius: 50px;
+    font-family: "Kavivanar", cursive;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button_saiba_mais_home_page:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 3ms;
+}
 
 /* Contatos */
 #Contatos h1{
